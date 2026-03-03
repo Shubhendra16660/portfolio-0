@@ -38,9 +38,11 @@ nav{
     padding: 10px 0;
     
 }
+
 nav .fa-bars{
     margin-right: 20px;  /* value adjust kar sakte ho */
 }
+
 nav .fa-bars,
 nav .fa-times{
     display: none;
@@ -50,17 +52,20 @@ nav .fa-times{
     width: 140px;
     
 }
+
 nav ul li{
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
 }
+
 nav ul li a{
     color: #fff;
     text-decoration: none;
     font-size: 18px;
     position: relative;
 }
+
 nav ul li a::after{
     content: '';
     width: 0;
@@ -373,7 +378,7 @@ nav.fas{
 
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(images/MyImage2.jpeg);
+        background-image: url(images/MyMobilephone.png);
     }
     .header-text{
         margin-top: 100%;
@@ -407,6 +412,26 @@ nav.fas{
        left: 25px;
        cursor: pointer;
     }
+
+    @media only screen and (max-width: 600px){
+
+    .services-list{
+        width: 100%;              /* full width le */
+        grid-template-columns: 1fr;  /* ek column me aa jaye */
+        grid-gap: 20px;          /* gap thoda kam */
+        margin-top: 30px;
+    }
+
+    .services-list div{
+        padding: 20px;           /* padding kam for small screen */
+        font-size: 12px;
+    }
+
+    .services-list div h2{
+        font-size: 22px;         /* heading thodi chhoti */
+    }
+
+}
 
     .sub-title{
         font-size: 40px;
